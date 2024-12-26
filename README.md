@@ -78,34 +78,6 @@ Before you open up a codespace on a repository, you can create a development con
 
 **Wait about 60 seconds then refresh your repository landing page for the next step.**
 
-# Resolving Git Push Error: [rejected] main -> main (non-fast-forward)
-
-## How to Fix Git Push Rejected (non-fast-forward)
-
-If you encounter the error `[rejected] main -> main (non-fast-forward)` during a git push, it means that your local branch is behind the remote branch. To resolve this, you can follow these steps:
-
-1. Fetch the latest changes from the remote repository:
-    ```sh
-    git fetch origin
-    ```
-
-2. Merge the fetched changes into your local branch:
-    ```sh
-    git merge origin/main
-    ```
-
-3. Resolve any merge conflicts if they arise.
-
-4. Once the merge is complete, push your changes again:
-    ```sh
-    git push origin main
-    ```
-
-Alternatively, if you want to overwrite the remote branch with your local changes, you can use the `--force` option (use with caution):
-    ```sh
-    git push --force origin main
-    ```
-
 <footer>
 
 <!--
